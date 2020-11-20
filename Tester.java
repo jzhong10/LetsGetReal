@@ -150,7 +150,7 @@ public class Tester {
         System.out.println(n.add(n1));
       }
 
-      n = new RationalNumber(4, 3);
+      n = new RationalNumber(-4, 3);
       for (int i = 0; i<=10; i++) {
         RationalNumber n1 = new RationalNumber(i, 3);
         System.out.print(n);
@@ -159,5 +159,16 @@ public class Tester {
         System.out.print(" equals ");
         System.out.println(n.add(n1));
       }
+
+      n = new RationalNumber(4, 2);
+      for (int i = 0; i<=10; i++) {
+        RationalNumber n1 = new RationalNumber(i, 2);
+        System.out.print(n);
+        System.out.print(" subtracted by ");
+        System.out.print(n1);
+        System.out.print(" equals ");
+        System.out.println(n.subtract(n1));
+      }
+
     }
 }

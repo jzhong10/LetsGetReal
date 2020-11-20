@@ -44,7 +44,7 @@ public class RationalNumber extends RealNumber {
     if (a==0 || b==0) {
       return 1;
     }
-    if (b>a) {
+    if (b > a) {
       int temp = a;
       a = b;
       b = temp;
@@ -56,7 +56,7 @@ public class RationalNumber extends RealNumber {
       rem = g%rem;
       g = temp;
     }
-    return g;
+    return Math.abs(g);
   }
 
   private void reduce() {
@@ -79,6 +79,11 @@ public class RationalNumber extends RealNumber {
   public RationalNumber add(RationalNumber other) {
     int nume = getNumerator() * other.getDenominator() + other.getNumerator() * getDenominator();
     int deno = getDenominator() * other.getDenominator();
-    return new RationalNumber(nume, deno); 
+    return new RationalNumber(nume, deno);
+  }
+
+  public RationalNumber subtract(RationalNumber other) {
+    RationalNumber negator = new RationalNumber(-1, 1);
+    return this.add(other.multiply(negator));
   }
 }
