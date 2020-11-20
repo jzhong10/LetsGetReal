@@ -35,10 +35,7 @@ public class RealNumber {
     return a;
   }
 
-  public RealNumber divide(RealNumber other) {
-    if (other.getValue()==0) {
-      throw new IllegalArgumentException("can't divide by 0");
-    }
+  public RealNumber divide(RealNumber other) 
     RealNumber a = new RealNumber(getValue() / other.getValue());
     return a;
   }
