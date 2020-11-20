@@ -6,5 +6,12 @@ public class Tester {
         System.out.println(a.equals(b));
       }
 
+      for (int i = 0; i<5; i++) {
+        RealNumber b = new RealNumber(i);
+        System.out.println(a.getValue());
+        a.add(b);
+        System.out.println(a.getValue());
+        System.out.println();
+      }
     }
 }

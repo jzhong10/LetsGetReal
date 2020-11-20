@@ -25,4 +25,9 @@ public class RealNumber {
     return false;
   }
 
+  public RealNumber add(RealNumber other) {
+    value += other.getValue();
+    return null;
+  }
+
 }
