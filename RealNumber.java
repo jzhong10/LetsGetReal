@@ -26,13 +26,18 @@ public class RealNumber {
   }
 
   public RealNumber add(RealNumber other) {
-    value += other.getValue();
-    return null;
+    RealNumber a = new RealNumber(getValue() + other.getValue());
+    return a;
   }
 
   public RealNumber multiply(RealNumber other) {
-    value *= other.getValue();
-    return null;
+    RealNumber a = new RealNumber(getValue() * other.getValue());
+    return a;
+  }
+
+  public RealNumber divide(RealNumber other) {
+    RealNumber a = new RealNumber(getValue() / other.getValue());
+    return a;
   }
 
 }
