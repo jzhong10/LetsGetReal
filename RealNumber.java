@@ -35,7 +35,7 @@ public class RealNumber {
     return a;
   }
 
-  public RealNumber divide(RealNumber other) 
+  public RealNumber divide(RealNumber other) {
     RealNumber a = new RealNumber(getValue() / other.getValue());
     return a;
   }

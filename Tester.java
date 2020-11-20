@@ -55,7 +55,12 @@ public class Tester {
 */
       System.out.println("Rational Number Testing:");
 
-      RationalNumber n = new RationalNumber(2, 5);
+      RationalNumber n = new RationalNumber(2, 0);
+      System.out.println(n.getValue());
+      System.out.println(n.getNumerator());
+      System.out.println(n.getDenominator());
+
+      n = new RationalNumber(2, 5);
       System.out.println(n.getValue());
       System.out.println(n.getNumerator());
       System.out.println(n.getDenominator());
@@ -65,9 +70,14 @@ public class Tester {
       System.out.println(n.getNumerator());
       System.out.println(n.getDenominator());
 
-      n = new RationalNumber(2, 0);
-      System.out.println(n.getValue());
-      System.out.println(n.getNumerator());
-      System.out.println(n.getDenominator());
+      System.out.println(n.equals(n.reciprocal())); // false unless 1/1 or 1/0
+      n = new RationalNumber(1, 1);
+      System.out.println(n.equals(n.reciprocal()));
+      n = new RationalNumber(1, 0);
+      System.out.println(n.equals(n.reciprocal()));
+      n = new RationalNumber(0, 1);
+      System.out.println(n.equals(n.reciprocal()));
+
+
     }
 }
