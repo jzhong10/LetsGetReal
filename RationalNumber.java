@@ -71,4 +71,8 @@ public class RationalNumber extends RealNumber {
     int deno = getDenominator() * other.getDenominator();
     return new RationalNumber(nume, deno);
   }
+
+  public RationalNumber divide(RationalNumber other) {
+    return this.multiply(other.reciprocal());
+  }
 }

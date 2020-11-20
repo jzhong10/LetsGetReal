@@ -92,7 +92,7 @@ public class Tester {
 
       System.out.println("Operation Testing");
       n = new RationalNumber(1, 2);
-      for (int i = 1; i<5; i++) {
+      for (int i = 0; i<5; i++) {
         RationalNumber n1 = new RationalNumber(1, i);
         System.out.print(n);
         System.out.print(" times ");
@@ -101,13 +101,33 @@ public class Tester {
         System.out.println(n.multiply(n1));
       }
 
-      for (int i = 1; i<5; i++) {
+      for (int i = 0; i<5; i++) {
         RationalNumber n1 = new RationalNumber(i, 1);
         System.out.print(n);
         System.out.print(" times ");
         System.out.print(n1);
         System.out.print(" equals ");
         System.out.println(n.multiply(n1));
+      }
+
+      n = new RationalNumber(1, 2);
+      for (int i = 0; i<5; i++) {
+        RationalNumber n1 = new RationalNumber(i, 1);
+        System.out.print(n);
+        System.out.print(" divided by ");
+        System.out.print(n1);
+        System.out.print(" equals ");
+        System.out.println(n.divide(n1));
+      }
+
+      n = new RationalNumber(360, 1);
+      for (int i = 0; i<8; i++) {
+        RationalNumber n1 = new RationalNumber(i, 1);
+        System.out.print(n);
+        System.out.print(" divided by ");
+        System.out.print(n1);
+        System.out.print(" equals ");
+        System.out.println(n.divide(n1));
       }
 
     }
