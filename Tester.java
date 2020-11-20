@@ -1,7 +1,7 @@
 public class Tester {
     public static void main(String[] args) {
 
-
+/*
       RealNumber a = new RealNumber(10.0);
       RealNumber b = new RealNumber(4.0);
 
@@ -52,5 +52,17 @@ public class Tester {
         System.out.print(" equals ");
         System.out.println(c);
       }
+*/
+      System.out.println("Rational Number Testing:");
+
+      RationalNumber n = new RationalNumber(2, 1);
+      System.out.println(n.getValue());
+      System.out.println(n.getNumerator());
+      System.out.println(n.getDenominator());
+
+      n = new RationalNumber(2, 0);
+      System.out.println(n.getValue());
+      System.out.println(n.getNumerator());
+      System.out.println(n.getDenominator());
     }
 }
