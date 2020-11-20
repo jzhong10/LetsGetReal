@@ -9,6 +9,7 @@ public class RationalNumber extends RealNumber {
       numerator *= -1;
       denominator *= -1;
     }
+    reduce();
     if (deno == 0) {
       numerator = 0;
       denominator = 1;
@@ -40,6 +41,9 @@ public class RationalNumber extends RealNumber {
   }
 
   public static int gcd(int a, int b) {
+    if (a==0 || b==0) {
+      return 1;
+    }
     if (b>a) {
       int temp = a;
       a = b;
@@ -53,5 +57,11 @@ public class RationalNumber extends RealNumber {
       g = temp;
     }
     return g;
+  }
+
+  private void reduce() {
+    int gcd = gcd(getNumerator(), getDenominator());
+    numerator /= gcd;
+    denominator /= gcd;
   }
 }

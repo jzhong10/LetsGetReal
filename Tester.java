@@ -86,5 +86,8 @@ public class Tester {
       System.out.println(RationalNumber.gcd(45, 210));
       System.out.println(RationalNumber.gcd(19, 5));
 
+      RationalNumber n2 = new RationalNumber(15, 45);
+      System.out.println(n2.getNumerator());
+      System.out.println(n2.getDenominator());
     }
 }
