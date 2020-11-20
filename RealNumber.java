@@ -30,4 +30,9 @@ public class RealNumber {
     return null;
   }
 
+  public RealNumber multiply(RealNumber other) {
+    value *= other.getValue();
+    return null;
+  }
+
 }
