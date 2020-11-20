@@ -79,5 +79,12 @@ public class Tester {
       System.out.println(n.equals(n.reciprocal()));
 
       System.out.println(n);
+
+      System.out.println(RationalNumber.gcd(100, 100));
+      System.out.println(RationalNumber.gcd(17 * 100, 17));
+      System.out.println(RationalNumber.gcd(210, 45));
+      System.out.println(RationalNumber.gcd(45, 210));
+      System.out.println(RationalNumber.gcd(19, 5));
+
     }
 }
