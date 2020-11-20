@@ -89,5 +89,26 @@ public class Tester {
       RationalNumber n2 = new RationalNumber(15, 45);
       System.out.println(n2.getNumerator());
       System.out.println(n2.getDenominator());
+
+      System.out.println("Operation Testing");
+      n = new RationalNumber(1, 2);
+      for (int i = 1; i<5; i++) {
+        RationalNumber n1 = new RationalNumber(1, i);
+        System.out.print(n);
+        System.out.print(" times ");
+        System.out.print(n1);
+        System.out.print(" equals ");
+        System.out.println(n.multiply(n1));
+      }
+
+      for (int i = 1; i<5; i++) {
+        RationalNumber n1 = new RationalNumber(i, 1);
+        System.out.print(n);
+        System.out.print(" times ");
+        System.out.print(n1);
+        System.out.print(" equals ");
+        System.out.println(n.multiply(n1));
+      }
+
     }
 }
