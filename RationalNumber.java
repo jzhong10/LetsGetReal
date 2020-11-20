@@ -75,4 +75,10 @@ public class RationalNumber extends RealNumber {
   public RationalNumber divide(RationalNumber other) {
     return this.multiply(other.reciprocal());
   }
+
+  public RationalNumber add(RationalNumber other) {
+    int nume = getNumerator() * other.getDenominator() + other.getNumerator() * getDenominator();
+    int deno = getDenominator() * other.getDenominator();
+    return new RationalNumber(nume, deno); 
+  }
 }

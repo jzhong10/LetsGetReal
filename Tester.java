@@ -130,5 +130,34 @@ public class Tester {
         System.out.println(n.divide(n1));
       }
 
+      n = new RationalNumber(10, 1);
+      for (int i = 0; i<=5; i++) {
+        RationalNumber n1 = new RationalNumber(i, 1);
+        System.out.print(n);
+        System.out.print(" added to ");
+        System.out.print(n1);
+        System.out.print(" equals ");
+        System.out.println(n.add(n1));
+      }
+
+      n = new RationalNumber(1, 10);
+      for (int i = 0; i<=5; i++) {
+        RationalNumber n1 = new RationalNumber(i, 1);
+        System.out.print(n);
+        System.out.print(" added to ");
+        System.out.print(n1);
+        System.out.print(" equals ");
+        System.out.println(n.add(n1));
+      }
+
+      n = new RationalNumber(4, 3);
+      for (int i = 0; i<=10; i++) {
+        RationalNumber n1 = new RationalNumber(i, 3);
+        System.out.print(n);
+        System.out.print(" added to ");
+        System.out.print(n1);
+        System.out.print(" equals ");
+        System.out.println(n.add(n1));
+      }
     }
 }
