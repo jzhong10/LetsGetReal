@@ -78,6 +78,6 @@ public class Tester {
       n = new RationalNumber(0, 1);
       System.out.println(n.equals(n.reciprocal()));
 
-
+      System.out.println(n);
     }
 }
