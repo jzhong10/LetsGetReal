@@ -21,29 +21,36 @@ public class Tester {
         c = new RealNumber(sum);
         System.out.println(" " + a.equals(c));
       }
-/*
-      for (double i = 0.0; i<=10.0; i++) {
-        b = new RealNumber(i);
-        System.out.println(a.equals(b));
+
+      for (double i = 1.0; i<= 5.0; i++) {
+        RealNumber c = new RealNumber(i+0.01*i);
+        System.out.print(c);
+        System.out.print(", ");
+        System.out.print(b);
+        c = b.multiply(c);
+        System.out.print(" ");
+        System.out.println(c);
       }
 
-      for (double i = 0.0; i<=5.0; i+=1.0) {
-        b = new RealNumber(i);
-        System.out.println(a.getValue());
-        a.add(b);
-        System.out.println(a.getValue());
-        System.out.println();
+      for (double i = 1.0; i<= 10.0; i++) {
+        RealNumber c = new RealNumber(i);
+        System.out.print(b);
+        System.out.print(", ");
+        System.out.print(c);
+        c = b.divide(c);
+        System.out.print(" ");
+        System.out.println(c);
       }
 
-      for (double i = 1.0; i<=5.0; i+=1.0) {
-        b = new RealNumber(i);
-        System.out.println(a.getValue());
-        a.multiply(b);
-        System.out.println(a.getValue());
-        System.out.println();
+      a = new RealNumber(10.0);
+      for (double i = 1.0; i<=5; i+=.7) {
+        RealNumber c = new RealNumber(i);
+        System.out.print(a);
+        System.out.print(" subtracted by ");
+        System.out.print(c);
+        c = a.subtract(c);
+        System.out.print(" equals ");
+        System.out.println(c);
       }
-
-      System.out.println(600.0024 * 5.0);
-      */
     }
 }
