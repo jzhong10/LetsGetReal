@@ -203,5 +203,13 @@ public class Tester {
         System.out.println(" " + x3.equals(y3));
       }
 
+      RationalNumber z1 = new RationalNumber(0,1);
+      System.out.println(z1);
+      z1 = new RationalNumber(4523, 0);
+      System.out.println(z1);
+      z1 = new RationalNumber(4523, 1);
+      System.out.println(z1);
+      z1 = new RationalNumber(4523, 2);
+      System.out.println(z1);
     }
 }
