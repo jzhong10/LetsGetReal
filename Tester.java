@@ -1,6 +1,5 @@
 public class Tester {
     public static void main(String[] args) {
-
 /*
       RealNumber a = new RealNumber(10.0);
       RealNumber b = new RealNumber(4.0);
@@ -52,9 +51,9 @@ public class Tester {
         System.out.print(" equals ");
         System.out.println(c);
       }
-*/
 
-/*
+
+
       System.out.println("Rational Number Testing:");
 
       RationalNumber n = new RationalNumber(2, 0);
@@ -171,13 +170,38 @@ public class Tester {
         System.out.print(" equals ");
         System.out.println(n.subtract(n1));
       }
-*/
 
+*/
       RealNumber x = new RealNumber(5.4);
       RationalNumber y = new RationalNumber(54, 10);
-      System.out.println(x.compareTo(y));
+      for (int i = 0; i<=5; i++) {
+        RealNumber z = new RealNumber(i);
+        System.out.println(x.equals(y));
+        System.out.println(y.compareTo(x));
+        x = x.add(z);
+      }
 
-      System.out.println(x.equals(y));
+      System.out.println();
+      RealNumber y1 = new RealNumber(5.4);
+      x = new RealNumber(5.4);
+      for (int i = 0; i<=5; i++) {
+        RealNumber z = new RealNumber(i);
+        System.out.println(x.equals(y1));
+        System.out.println(y1.compareTo(x));
+        x = x.add(z);
+      }
+
+      RationalNumber x3 = new RationalNumber(1, 3);
+      RealNumber y3 = new RealNumber(0);
+      double t = 0.3;
+      for (int i = 0; i<=8; i++) {
+        y3 = y3.add(new RealNumber(t));
+        t = t/10;
+        System.out.print(y3.getValue());
+        System.out.print(" , ");
+        System.out.print(x3.getValue());
+        System.out.println(" " + x3.equals(y3));
+      }
 
     }
 }
