@@ -13,6 +13,7 @@ public class RealNumber extends Number {
     return ""+getValue();
   }
 
+/*
   public boolean equals(RealNumber other) {
     if (value==0 && other.getValue()==0) {
       return true;
@@ -24,7 +25,7 @@ public class RealNumber extends Number {
     }
     return false;
   }
-
+*/
   public RealNumber add(RealNumber other) {
     RealNumber a = new RealNumber(getValue() + other.getValue());
     return a;

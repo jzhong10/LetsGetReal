@@ -173,8 +173,11 @@ public class Tester {
       }
 */
 
-      RealNumber x = new RealNumber(-5.41);
+      RealNumber x = new RealNumber(5.4);
       RationalNumber y = new RationalNumber(54, 10);
       System.out.println(x.compareTo(y));
+
+      System.out.println(x.equals(y));
+
     }
 }
