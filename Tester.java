@@ -53,6 +53,8 @@ public class Tester {
         System.out.println(c);
       }
 */
+
+/*
       System.out.println("Rational Number Testing:");
 
       RationalNumber n = new RationalNumber(2, 0);
@@ -169,6 +171,10 @@ public class Tester {
         System.out.print(" equals ");
         System.out.println(n.subtract(n1));
       }
+*/
 
+      RealNumber x = new RealNumber(-5.41);
+      RationalNumber y = new RationalNumber(54, 10);
+      System.out.println(x.compareTo(y));
     }
 }
